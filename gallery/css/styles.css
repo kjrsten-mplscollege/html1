@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: #224d77;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+    background-color: #623510;
+    color: #ebe8de;
+    border-bottom: 10px solid #36b61c;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 250px;
+  }
+  
